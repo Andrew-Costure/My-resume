@@ -1,0 +1,44 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Blur. The Image and Video blur extension",
+  "version": "4.0.3",
+  "description": "A browser extension that blurs all images on a page, for when you want to be discreet or don't want to look at certain images.",
+  "manifest_version": 3,
+  "permissions": [
+    "storage","activeTab"
+  ],
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "all_frames": true,
+      "matches": ["<all_urls>"],
+      "js": ["filter.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "logo/icon128.png",
+    "default_popup": "popup.html",
+    "browser_style": true
+  },
+  "icons": {
+    "128": "logo/icon128.png"
+  },
+  "commands": {
+    "reverse_status": {
+        "suggested_key": {
+            "default": "Alt+L"
+        },
+        "description": "Reverse blur state"
+    },
+    "toggle_selected": {
+        "suggested_key": {
+            "default": "Alt+K"
+        },
+        "description": "Unblur/reblur selected image"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

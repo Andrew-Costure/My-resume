@@ -1,0 +1,132 @@
+body {
+    border: white;
+    background-color: white;
+    user-select: none;
+    font-family: 'Source Sans Pro',
+    sans-serif;
+    font-weight:900;
+
+}
+
+.popup {
+    min-width: 320px;
+    align-items: center;
+    border: white;
+    background-color: white;
+    width: 150px;
+    user-select: none;
+    font-family: 'Source Sans Pro',
+        sans-serif;
+    font-weight: 900;
+    padding: 0 10px 0 10px;
+
+    background: hsla(186, 33%, 94%, 1);
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 60%, hsla(216, 41%, 79%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 60%, hsla(216, 41%, 79%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 60%, hsla(216, 41%, 79%, 1) 100%);
+}
+
+.content {
+    background-color: white;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 8px 12px 10px 12px;
+    border-radius: 20px;
+}
+
+.shortcut {
+    font-size: 1rem;
+}
+
+.sub-title {
+    font-weight: 300;
+    font-size: .85rem;
+    text-transform: uppercase;
+    margin: 8px 0 8px 0;
+}
+
+
+.banner {
+    display: flex;
+}
+
+.bluramt {
+    height: 6.4px;
+}
+
+.logo {
+    margin-left: 200px;
+    position: absolute;
+    margin-left: 260px;
+    filter: blur(2px);
+    transition: filter 800ms ease;
+    transition: transform 800ms ease;
+}
+
+.logo:hover {
+    filter: blur(0);
+    transform: scale(1.2); 
+}
+
+.title {
+    font-weight: 300;
+    font-size: 2rem;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.field-label {
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+#blur-level-text {
+    margin-top: 10px;
+}
+
+/* firefox specific width and margin */
+@-moz-document url-prefix() {
+    body {
+        align-items: center;
+        text-align: center;
+        width: 170px;
+        margin: 5px;
+    }
+}
+
+#performance-warning {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 400ms ease ;
+    margin-bottom: 5px;
+    font-size: .85rem;
+}
+
+h1 {
+    color: black;
+}
+.text {
+    font-weight: 300;
+}
+
+.useful {
+    font-weight: 300;
+    font-size: .85rem;
+    text-transform: uppercase;
+}
+
+.donate {
+    font-size: small;
+    font-weight: 200;
+    position:absolute;
+    bottom:5;
+}
+#instruction {
+    font-size: 14px;
+}
+#heading {
+    font-size: 34px;
+}
+
+.switch {
+    margin-bottom: 15px;
+}

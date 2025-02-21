@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title>Blur</title>
+    <script src="./popup.js"></script>
+    <link rel="stylesheet" href="./styles/popup.css" />
+    <link rel="stylesheet" href="./styles/toggle.css" />
+    <link rel="stylesheet" href="./styles/range.css" />
+    <link rel="stylesheet" href="./styles/bottom.css" />
+    <link rel="stylesheet" href="./styles/allowlist.css" />
+  </head>
+  <body class="popup">
+    <div class="banner">
+      <div class="title" id="heading">Blur.</div>
+      <div class="logo">
+        <img src="logo/blur.png" height="40" width="40" />
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Rounded switch -->
+      <div class="sub-title"><span>Enable</span></div>
+      <label class="switch">
+        <input type="checkbox" id="enable" />
+        <span class="slider round"></span>
+      </label>
+
+      <div id="settings">
+        <div class="blur-slider">
+          <span class="field-label">Blur Amount</span>
+          <div class="range">
+            <input
+              id="slider"
+              type="range"
+              min="1"
+              max="100"
+              class="bluramt"
+              name="bluramt"
+            />
+          </div>
+          <div id="blur-level-text" class="field-label">
+            <div id="blur-level"></div>
+          </div>
+
+          <br />
+          <span id="performance-warning">
+            Blurring more than 50% may impact webpage performance</span
+          >
+        </div>
+
+        <hr />
+
+        <div class="sub-title"><span>Don't want to blur this site?</span></div>
+
+        <div class="whitelist-container">
+          <div class="whitelist-domains">
+            <div
+              class="field-label current-domain-label"
+              id="current-domain"
+            ></div>
+
+            <button class="btn-allowlist" id="btn-whitelist-add">
+              Add site to your safe list
+            </button>
+
+            <button class="btn-allowlist" id="btn-whitelist-remove">
+              Remove from site from your safe list
+            </button>
+
+            <div class="field-label">
+              <small> Be careful, adding sites will unblur immediately!</small>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+      </div>
+      <div class="intruction-container">
+        <div class="sub-title"><span>Shortcuts</span></div>
+
+        <div class="field-label">
+          <div class="shortcut">Alt + L: Disable/Enable extension</div>
+          <div class="shortcut">Alt + K: Blur/unblur hovered content</div>
+        </div>
+      </div>
+      <div class="donate">
+        <div class="cta-btns">
+          <a
+            id="#left-cta-btn"
+            href="https://www.buymeacoffee.com/fhazer"
+            target="_blank"
+            class="cta-btn btn-donate"
+          >
+            <span>Buy me a coffee!</span>
+          </a>
+          <a
+            id="#right-cta-btn"
+            href="https://chrome.google.com/webstore/detail/blur-the-image-and-video/aikjogmpaoaookmacnkbenekcnkjlkmi#:~:text=Blur.,Image%20and%20Video%20blur%20extension&text=A%20Chrome%20extension%20that%20blurs,we%20wished%20we%20didn't."
+            target="_blank"
+            class="cta-btn btn-share"
+          >
+            <span>Review us!</span>
+          </a>
+        </div>
+        <div class="cta-ios">
+          <a
+            href="https://apps.apple.com/us/app/blur-image-video-blur/id6478813570"
+            target="_blank"
+            class="cta-btn btn-ios"
+          >
+            <span>Available on iOS!</span>
+          </a>
+        </div>
+        <div class="field-label" style="text-align: center">
+          <span id="copyright"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

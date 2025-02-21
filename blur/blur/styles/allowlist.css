@@ -1,0 +1,29 @@
+#btn-whitelist-add {
+    background-color: rgb(188, 244, 174);
+}
+
+#btn-whitelist-remove {
+    background-color: rgb(244, 206, 174);
+}
+
+.btn-allowlist {
+    border: none;
+    margin: 5px 0 10px 0;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    transition: transform 200ms ease-in;
+    cursor: pointer;
+}
+
+.btn-allowlist:hover {
+    transform: scale(1.02);
+}
+
+.current-domain-label {
+    background-color: hsla(186, 33%, 94%, 1);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+

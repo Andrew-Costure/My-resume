@@ -1,0 +1,57 @@
+.cta-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    margin: 5px 0 10px -10px;
+}
+
+.cta-ios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    margin: 0 0 10px -10px;
+}
+
+.cta-label {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.cta-btn {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 130px;
+    text-align: center;
+    text-decoration: inherit;
+    color: black;
+    font-weight: 200;
+    font-size: larger;
+}
+
+.btn-ios {
+    background-color: black;
+    color: white;
+    width: 95%;
+}
+
+.btn-donate {
+    background-color: #ffbf5f;
+    margin-right: 10px;
+}
+
+.btn-share {
+    margin-left: 10px;
+    background-color: #5fadff;
+}
+
+.copyright {
+    margin-top: 5px;
+    font-size: smaller;
+}
